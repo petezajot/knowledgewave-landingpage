@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KnowledgeWave — Local AI Notes & Document Intelligence</title>
+  <meta name="description" content="Capture, transcribe, and analyze voice notes, meetings, and documents 100% on-device with private AI models. High-fidelity audio, Whisper transcription, and local intelligence.">
+  <meta name="keywords" content="KnowledgeWave, AI voice notes, on-device AI, private transcription, Whisper AI iPhone, local LLM, document reader, Action Button recording, Apple Reminders sync, notas de voz IA, transcripcion offline">
+  <meta name="author" content="KnowledgeWave">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#0C0C0C">
+
+  <!-- Apple & iOS Safari -->
+  <link rel="icon" type="image/png" href="assets/logo.png">
+  <link rel="apple-touch-icon" href="assets/app-icon.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="KnowledgeWave">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+  <!-- Open Graph / Social Sharing -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="KnowledgeWave">
+  <meta property="og:title" content="KnowledgeWave — Local AI Notes & Document Intelligence">
+  <meta property="og:description" content="Private, on-device artificial intelligence for your voice recordings, notes, and documents. Zero cloud servers, complete confidentiality.">
+  <meta property="og:image" content="assets/app-icon.png">
+  <meta property="og:locale" content="es_ES">
+  <meta property="og:locale:alternate" content="en_US">
+
+  <!-- Twitter Cards -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="KnowledgeWave — Local AI Notes & Document Intelligence">
+  <meta name="twitter:description" content="Private, on-device artificial intelligence for your voice recordings, notes, and documents.">
+  <meta name="twitter:image" content="assets/app-icon.png">
+
+  <!-- Fonts & Styles -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Schema.org JSON-LD Structured Data for Google Rich Snippets -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "SoftwareApplication",
+        "name": "KnowledgeWave",
+        "operatingSystem": "iOS",
+        "applicationCategory": "ProductivityApplication",
+        "applicationSubCategory": "UtilitiesApplication",
+        "description": "On-device artificial intelligence app for recording, transcribing, and analyzing voice memos and documents with complete privacy.",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD"
+        },
+        "featureList": [
+          "100% On-Device Whisper Speech-to-Text",
+          "Local AI Executive Summaries & Insights",
+          "Document Hub PDF & Word Reader",
+          "Apple Action Button Quick Recording",
+          "Apple Reminders Auto Sync",
+          "Interactive Ask-your-note AI Chat"
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "¿KnowledgeWave transmite mis audios o notas a servidores externos?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. KnowledgeWave opera con una arquitectura estricta 100% On-Device. Todos los modelos de IA y el procesamiento se ejecutan en el hardware de tu iPhone."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Funciona sin conexión a internet?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sí. Tanto la transcripción con Whisper como la generación de resúmenes con IA local funcionan perfectamente en modo avión o sin conexión."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Cómo se integra con el Botón de Acción de mi iPhone?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Puedes asignar el atajo de KnowledgeWave al Botón de Acción en Ajustes de iOS para iniciar la grabación instantáneamente incluso con la pantalla bloqueada."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <div class="ambient-glow"></div>
+
+  <!-- Header Navigation -->
+  <header>
+    <div class="nav-container">
+      <a href="index.html" class="brand">
+        <img src="assets/logo.png" alt="KnowledgeWave Logo">
+        <span>KnowledgeWave</span>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="#features" data-i18n="nav.features">Características</a></li>
+        <li><a href="#screenshots" data-i18n="nav.screenshots">Capturas</a></li>
+        <li><a href="#action-button" data-i18n="nav.action_button">Botón de Acción</a></li>
+        <li><a href="#privacy" data-i18n="nav.privacy">Privacidad On-Device</a></li>
+        <li><a href="#faq" data-i18n="nav.faq">Preguntas</a></li>
+        <li><a href="privacy.html" data-i18n="nav.privacy_policy">Política de Privacidad</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <div class="lang-toggle">
+          <button class="lang-btn active" data-lang="es">ES</button>
+          <button class="lang-btn" data-lang="en">EN</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <main class="container">
+    <section class="hero">
+      <div class="hero-badge" data-i18n="hero.badge">100% PRIVACIDAD ON-DEVICE · INTELIGENCIA LOCAL</div>
+      <h1 data-i18n="hero.title">Tus reuniones, notas y lecturas con <span class="gradient">Inteligencia Artificial Local</span></h1>
+      <p data-i18n="hero.desc">KnowledgeWave graba, transcribe y analiza tus ideas y documentos directamente en tu iPhone. Sin servidores externos, sin suscripciones a la nube y con máxima confidencialidad.</p>
+
+      <div class="cta-group">
+        <a href="#download" class="btn-appstore">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M15.97 6.84c.64-.78 1.08-1.87.96-2.84-.93.04-2.07.62-2.73 1.4-.58.67-1.1 1.77-.96 2.82 1.05.08 2.09-.6 2.73-1.38z"/>
+          </svg>
+          <div class="btn-text">
+            <small data-i18n="hero.cta_appstore_sub">Consíguelo en el</small>
+            <strong data-i18n="hero.cta_appstore_main">App Store</strong>
+          </div>
+        </a>
+
+        <a href="#features" class="btn-secondary" data-i18n="hero.cta_explore">Explorar Características</a>
+      </div>
+
+      <div style="font-size: 0.85rem; color: var(--color-text-tertiary); margin-top: -1.5rem; margin-bottom: 3rem;" data-i18n="hero.ios_req">
+        Diseñado para iOS 26+ · Optimizado para iPhone 15 & 16 Pro
+      </div>
+
+      <!-- App Mockup Banner -->
+      <div class="showcase-banner">
+        <div class="device-frame" style="max-width: 320px; margin: 0 auto;">
+          <img src="assets/screenshots/IMG_3040.PNG" alt="KnowledgeWave App Showcase" style="width: 100%; height: auto; border-radius: 36px; display: block; box-shadow: 0 20px 50px rgba(0,0,0,0.8), 0 0 40px rgba(237,72,32,0.25);">
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Grid -->
+    <section id="features" class="features-section">
+      <div class="section-header">
+        <span class="section-badge" data-i18n="features.badge">Capacidades de Vanguardia</span>
+        <h2 data-i18n="features.title">Potencia de escritorio en tu bolsillo</h2>
+        <p data-i18n="features.desc">Máxima velocidad de procesamiento, respuesta inmediata y bajo consumo de batería directamente en tu iPhone.</p>
+      </div>
+
+      <div class="features-grid">
+        <!-- Action Button (Featured) -->
+        <div id="action-button" class="feature-card featured-card">
+          <div class="featured-content">
+            <span class="featured-badge" data-i18n="card.action.badge">ACCESO INSTANTÁNEO DE HARDWARE</span>
+            <h3 style="font-size: 1.6rem; margin-bottom: 0.75rem;" data-i18n="card.action.title">Integración Total con el Botón de Acción</h3>
+            <p data-i18n="card.action.desc">Asigna KnowledgeWave al botón lateral de tu iPhone en Ajustes de iOS. Mantén presionado un par de segundos y la app comenzará a grabar de inmediato con Dynamic Island activa, incluso si el dispositivo está bloqueado o en el bolsillo.</p>
+          </div>
+          <div style="font-size: 3.5rem; color: var(--color-primary); padding: 1.5rem; background: rgba(0,0,0,0.4); border-radius: 20px; border: 1px solid var(--color-border);">
+            🔘
+          </div>
+        </div>
+
+        <!-- 1: Whisper -->
+        <div class="feature-card">
+          <div class="feature-icon">🎙️</div>
+          <h3 data-i18n="card.whisper.title">Transcripción Offline con Whisper</h3>
+          <p data-i18n="card.whisper.desc">Convierte horas de audio en texto con altísima fidelidad y soporte multilingüe sin necesitar conexión a internet.</p>
+        </div>
+
+        <!-- 2: Llama LLM -->
+        <div class="feature-card">
+          <div class="feature-icon">🧠</div>
+          <h3 data-i18n="card.llama.title">Resúmenes e Insights con Inteligencia Artificial</h3>
+          <p data-i18n="card.llama.desc">Genera resúmenes ejecutivos, extrae puntos clave estructurados y obtén respuestas rápidas procesadas 100% en la memoria de tu dispositivo.</p>
+        </div>
+
+        <!-- 3: Document Hub -->
+        <div class="feature-card">
+          <div class="feature-icon">📚</div>
+          <h3 data-i18n="card.dochub.title">Document Hub & Lector Inteligente</h3>
+          <p data-i18n="card.dochub.desc">Importa documentos PDF o Word. Extrae su contenido, genera resúmenes automáticos y disfruta de una lectura fluida estilo e-reader.</p>
+        </div>
+
+        <!-- 4: TTS -->
+        <div class="feature-card">
+          <div class="feature-icon">🗣️</div>
+          <h3 data-i18n="card.tts.title">Escucha tus Notas con Voz Natural</h3>
+          <p data-i18n="card.tts.desc">Text-to-Speech nativo con modulación de velocidad de hasta 3.0x y detección automática de idioma para estudiar o repasar en movimiento.</p>
+        </div>
+
+        <!-- 5: Reminders -->
+        <div class="feature-card">
+          <div class="feature-icon">✅</div>
+          <h3 data-i18n="card.reminders.title">Exportación a Recordatorios de Apple</h3>
+          <p data-i18n="card.reminders.desc">La IA detecta compromisos y tareas pendientes en tus reuniones y te permite enviarlos a Apple Reminders con un solo toque.</p>
+        </div>
+
+        <!-- 6: Chat -->
+        <div class="feature-card">
+          <div class="feature-icon">💬</div>
+          <h3 data-i18n="card.chat.title">Conversa con tus Notas</h3>
+          <p data-i18n="card.chat.desc">Hazle preguntas a tus grabaciones y documentos sobre acuerdos, cifras o dudas específicas con respuestas contextuales al instante.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Visual Gallery / Screenshots Carousel -->
+    <section id="screenshots" class="gallery-section">
+      <div class="section-header">
+        <span class="section-badge" data-i18n="gallery.badge">RECORRIDO VISUAL</span>
+        <h2 data-i18n="gallery.title">Diseñado exclusivamente para iOS</h2>
+        <p data-i18n="gallery.desc">Una experiencia rápida, elegante y diseñada para sentirse como en casa en tu iPhone.</p>
+      </div>
+
+      <div class="gallery-scroller">
+        <!-- 1: Recording -->
+        <div class="gallery-item">
+          <div class="gallery-mockup">
+            <img src="assets/screenshots/IMG_3038.PNG" alt="Hi-Fi Recording" loading="lazy">
+          </div>
+          <div class="gallery-caption">
+            <h4 data-i18n="gallery.1.title">Grabación Hi-Fi</h4>
+            <p data-i18n="gallery.1.desc">Captura nítida con visualizador de ondas y cancelación de ruido.</p>
+          </div>
+        </div>
+
+        <!-- 2: Organized Library -->
+        <div class="gallery-item">
+          <div class="gallery-mockup">
+            <img src="assets/screenshots/IMG_3039.PNG" alt="Organized Library" loading="lazy">
+          </div>
+          <div class="gallery-caption">
+            <h4 data-i18n="gallery.2.title">Biblioteca Organizada</h4>
+            <p data-i18n="gallery.2.desc">Búsqueda instantánea, categorías y estado de transcripción.</p>
+          </div>
+        </div>
+
+        <!-- 3: Full Transcription -->
+        <div class="gallery-item">
+          <div class="gallery-mockup">
+            <img src="assets/screenshots/IMG_3040.PNG" alt="Full Transcription" loading="lazy">
+          </div>
+          <div class="gallery-caption">
+            <h4 data-i18n="gallery.3.title">Transcripción Completa</h4>
+            <p data-i18n="gallery.3.desc">Texto exacto sincronizado con controles de reproducción.</p>
+          </div>
+        </div>
+
+        <!-- 4: Summary -->
+        <div class="gallery-item">
+          <div class="gallery-mockup">
+            <img src="assets/screenshots/IMG_3041.PNG" alt="Executive Summary" loading="lazy">
+          </div>
+          <div class="gallery-caption">
+            <h4 data-i18n="gallery.4.title">Resúmenes Ejecutivos</h4>
+            <p data-i18n="gallery.4.desc">La esencia de tu reunión o clase sintetizada al instante.</p>
+          </div>
+        </div>
+
+        <!-- 5: Key Points -->
+        <div class="gallery-item">
+          <div class="gallery-mockup">
+            <img src="assets/screenshots/IMG_3042.PNG" alt="Key Points" loading="lazy">
+          </div>
+          <div class="gallery-caption">
+            <h4 data-i18n="gallery.5.title">Puntos Clave Estructurados</h4>
+            <p data-i18n="gallery.5.desc">Ideas centrales ordenadas con viñetas claras.</p>
+          </div>
+        </div>
+
+        <!-- 6: Translation -->
+        <div class="gallery-item">
+          <div class="gallery-mockup">
+            <img src="assets/screenshots/IMG_3044.PNG" alt="Multilingual Translation" loading="lazy">
+          </div>
+          <div class="gallery-caption">
+            <h4 data-i18n="gallery.6.title">Traducción Multilingüe</h4>
+            <p data-i18n="gallery.6.desc">Detección inteligente y traducción local en el dispositivo.</p>
+          </div>
+        </div>
+
+        <!-- 7: Chat with Note -->
+        <div class="gallery-item">
+          <div class="gallery-mockup">
+            <img src="assets/screenshots/IMG_3047.PNG" alt="Ask Note AI" loading="lazy">
+          </div>
+          <div class="gallery-caption">
+            <h4 data-i18n="gallery.7.title">Pregúntale a tu Nota</h4>
+            <p data-i18n="gallery.7.desc">Chat interactivo con IA para aclarar dudas de tu contenido.</p>
+          </div>
+        </div>
+
+        <!-- 8: Tasks & Reminders -->
+        <div class="gallery-item">
+          <div class="gallery-mockup">
+            <img src="assets/screenshots/IMG_3048.PNG" alt="Tasks & Reminders" loading="lazy">
+          </div>
+          <div class="gallery-caption">
+            <h4 data-i18n="gallery.8.title">Extracción de Tareas</h4>
+            <p data-i18n="gallery.8.desc">Detección de compromisos y envío directo a Recordatorios.</p>
+          </div>
+        </div>
+
+        <!-- 9: Document Hub -->
+        <div class="gallery-item">
+          <div class="gallery-mockup">
+            <img src="assets/screenshots/IMG_3053.PNG" alt="Document Hub" loading="lazy">
+          </div>
+          <div class="gallery-caption">
+            <h4 data-i18n="gallery.9.title">Document Hub</h4>
+            <p data-i18n="gallery.9.desc">Importación, lectura y análisis de PDFs o documentos Word.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq-section">
+      <div class="section-header">
+        <span class="section-badge" data-i18n="faq.badge">PREGUNTAS FRECUENTES</span>
+        <h2 data-i18n="faq.title">Todo lo que necesitas saber</h2>
+        <p data-i18n="faq.desc">Transparencia absoluta sobre la privacidad, el funcionamiento y la tecnología de KnowledgeWave.</p>
+      </div>
+
+      <div class="faq-grid">
+        <div class="faq-item">
+          <div class="faq-question">
+            <span class="icon">🔒</span>
+            <span data-i18n="faq.q1">¿Mis grabaciones o documentos viajan a servidores en la nube?</span>
+          </div>
+          <div class="faq-answer" data-i18n="faq.a1">
+            No, jamás. KnowledgeWave opera con una arquitectura estricta 100% On-Device. Ni tus audios, ni tus transcripciones, ni tus archivos salen de tu iPhone.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span class="icon">✈️</span>
+            <span data-i18n="faq.q2">¿La app funciona sin conexión a internet?</span>
+          </div>
+          <div class="faq-answer" data-i18n="faq.a2">
+            Sí. Tanto la transcripción con Whisper como la generación de resúmenes con IA local funcionan perfectamente en modo avión o sin señal de red.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span class="icon">🔘</span>
+            <span data-i18n="faq.q3">¿Puedo usar el Botón de Acción de mi iPhone?</span>
+          </div>
+          <div class="faq-answer" data-i18n="faq.a3">
+            Sí. Puedes asignar KnowledgeWave al Botón de Acción en Ajustes de iOS para comenzar a grabar de inmediato, incluso con la pantalla bloqueada o el teléfono en el bolsillo.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span class="icon">✅</span>
+            <span data-i18n="faq.q4">¿Cómo funciona la sincronización con Recordatorios?</span>
+          </div>
+          <div class="faq-answer" data-i18n="faq.a4">
+            La inteligencia artificial detecta compromisos y tareas pendientes en tus conversaciones y te permite enviarlos a Apple Reminders con un solo toque.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Privacy Guarantee Banner -->
+    <section>
+      <div id="privacy" class="privacy-banner">
+        <div class="privacy-banner-icon">🛡️</div>
+        <h3 data-i18n="privacy.banner.title">Tus datos nunca salen de tu iPhone</h3>
+        <p data-i18n="privacy.banner.desc">A diferencia de otras soluciones, KnowledgeWave no transmite tus grabaciones de voz, transcripciones ni documentos a servidores externos. Todo el cómputo de IA ocurre localmente en tu procesador Apple Silicon.</p>
+        <a href="privacy.html" class="btn-secondary" data-i18n="privacy.banner.link">Leer Política de Privacidad Completa →</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <div class="brand">
+            <img src="assets/logo.png" alt="KnowledgeWave Logo">
+            <span>KnowledgeWave</span>
+          </div>
+          <p data-i18n="footer.desc">La aplicación definitiva de notas de voz, lectura inteligente y productividad privada potenciada por inteligencia artificial local.</p>
+        </div>
+
+        <div class="footer-links">
+          <div class="footer-col">
+            <h4 data-i18n="footer.links_title">Navegación</h4>
+            <ul>
+              <li><a href="#features" data-i18n="nav.features">Características</a></li>
+              <li><a href="#screenshots" data-i18n="nav.screenshots">Capturas</a></li>
+              <li><a href="#action-button" data-i18n="nav.action_button">Botón de Acción</a></li>
+              <li><a href="#faq" data-i18n="nav.faq">Preguntas Frecuentes</a></li>
+              <li><a href="#privacy" data-i18n="nav.privacy">Privacidad</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4 data-i18n="footer.legal_title">Legal</h4>
+            <ul>
+              <li><a href="privacy.html" data-i18n="nav.privacy">Política de Privacidad</a></li>
+              <li><a href="terms.html" data-i18n="nav.terms">Términos de Servicio</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 KnowledgeWave. <span data-i18n="footer.rights">Todos los derechos reservados. Desarrollado con tecnología On-Device.</span></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
