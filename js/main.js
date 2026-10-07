@@ -29,9 +29,17 @@ const translations = {
     "features.desc": "Máxima velocidad de procesamiento, respuesta inmediata y bajo consumo de batería directamente en tu iPhone.",
 
     // Action Button Card
-    "card.action.badge": "ACCESO INSTANTÁNEO DE HARDWARE",
-    "card.action.title": "Integración Total con el Botón de Acción",
-    "card.action.desc": "Asigna KnowledgeWave al botón lateral de tu iPhone en Ajustes de iOS. Mantén presionado un par de segundos y la app comenzará a grabar de inmediato con Dynamic Island activa, incluso si el dispositivo está bloqueado o en el bolsillo.",
+    "card.action.badge": "ACCESO INSTANTÁNEO · HARDWARE DE APPLE",
+    "card.action.title": "Grabación con Pantalla Bloqueada y Botón de Acción",
+    "card.action.desc": "Inicia y detén grabaciones al instante con el botón lateral de tu iPhone sin necesidad de desbloquear con Face ID ni abrir la app. Se activa en segundo plano con Live Activity en vivo en la pantalla de bloqueo y Dynamic Island, y te confirma con vibración háptica física al tacto.",
+
+    // Card Bluetooth & AirPods
+    "card.bluetooth.title": "Micrófono Bluetooth & AirPods Automático",
+    "card.bluetooth.desc": "Dicta con total libertad de manos libres mientras llevas tu iPhone en el bolsillo o en la mochila. KnowledgeWave detecta y prioriza automáticamente el micrófono de tus AirPods o cualquier auricular Bluetooth, con conmutación inteligente si te los quitas.",
+
+    // Card Controls & Widgets
+    "card.controls.title": "Widgets Interactivos & Centro de Control",
+    "card.controls.desc": "Acceso instantáneo para iniciar o pausar notas de voz desde el Centro de Control de iOS y widgets interactivos en tu pantalla de inicio y bloqueo.",
 
     // Card 1: Whisper
     "card.whisper.title": "Transcripción Offline con Whisper",
@@ -88,10 +96,12 @@ const translations = {
     "faq.a1": "No, jamás. KnowledgeWave opera con una arquitectura estricta 100% On-Device. Ni tus audios, ni tus transcripciones, ni tus archivos salen de tu iPhone.",
     "faq.q2": "¿La app funciona sin conexión a internet?",
     "faq.a2": "Sí. Tanto la transcripción con Whisper como la generación de resúmenes con IA local funcionan perfectamente en modo avión o sin señal de red.",
-    "faq.q3": "¿Puedo usar el Botón de Acción de mi iPhone?",
-    "faq.a3": "Sí. Puedes asignar KnowledgeWave al Botón de Acción en Ajustes de iOS para comenzar a grabar de inmediato, incluso con la pantalla bloqueada o el teléfono en el bolsillo.",
+    "faq.q3": "¿Puedo grabar con el Botón de Acción con el iPhone bloqueado?",
+    "faq.a3": "Sí, totalmente. Gracias a la integración nativa con App Intents, puedes mantener presionado el Botón de Acción con la pantalla apagada o bloqueada; la grabación iniciará de inmediato en segundo plano con una Live Activity en tu Lock Screen y vibración háptica, sin necesidad de desbloquear el teléfono.",
     "faq.q4": "¿Cómo funciona la sincronización con Recordatorios?",
     "faq.a4": "La inteligencia artificial detecta compromisos y tareas pendientes en tus conversaciones y te permite enviarlos a Apple Reminders con un solo toque.",
+    "faq.q5": "¿Puedo grabar usando mis AirPods o auriculares Bluetooth?",
+    "faq.a5": "Sí. KnowledgeWave detecta automáticamente cualquier auricular Bluetooth conectado (AirPods de cualquier generación, diademas o auriculares genéricos) y prioriza su micrófono para capturar tu voz con claridad mientras caminas o tienes el iPhone en el bolsillo.",
 
     // Privacy Banner
     "privacy.banner.title": "Tus datos nunca salen de tu iPhone",
@@ -130,9 +140,17 @@ const translations = {
     "features.desc": "Maximum processing speed, instant response, and low battery consumption directly on your iPhone.",
 
     // Action Button Card
-    "card.action.badge": "INSTANT HARDWARE ACCESS",
-    "card.action.title": "Full Action Button Integration",
-    "card.action.desc": "Map KnowledgeWave to your iPhone's Action Button in iOS Settings. Hold it for a couple seconds and start recording instantly with active Dynamic Island, even when locked or in your pocket.",
+    "card.action.badge": "INSTANT HARDWARE ACCESS · LOCK SCREEN READY",
+    "card.action.title": "Action Button: Instant Record even when Locked",
+    "card.action.desc": "Set KnowledgeWave to your iPhone's Action Button. Hold it down with your screen turned off or locked to instantly capture thoughts. Runs seamlessly in the background with Live Activities and tactile haptics—zero unlocking required.",
+
+    // Card: Bluetooth & AirPods
+    "card.bluetooth.title": "AirPods & Bluetooth Mic Support",
+    "card.bluetooth.desc": "Keep your iPhone in your pocket or backpack. KnowledgeWave automatically routes audio to your AirPods or Bluetooth headset microphone the moment you record.",
+
+    // Card: Controls & Widgets
+    "card.controls.title": "Interactive Widgets & Control Center",
+    "card.controls.desc": "Quick-launch recordings directly from your iOS 18 / 26 Lock Screen, Home Screen interactive widgets, or the customizable Control Center.",
 
     // Card 1: Whisper
     "card.whisper.title": "Offline Transcription with Whisper",
@@ -189,10 +207,12 @@ const translations = {
     "faq.a1": "Never. KnowledgeWave operates under a strict 100% on-device architecture. Neither your audio, nor transcripts, nor imported files ever leave your iPhone.",
     "faq.q2": "Does the app work without an internet connection?",
     "faq.a2": "Yes. Both Whisper transcription and local AI summaries work completely offline in airplane mode with zero network access.",
-    "faq.q3": "Can I use my iPhone's Action Button?",
-    "faq.a3": "Yes. You can assign KnowledgeWave to your Action Button in iOS Settings to start recording instantly, even when your phone is locked or in your pocket.",
+    "faq.q3": "Can I record using the Action Button while my iPhone is locked?",
+    "faq.a3": "Yes, absolutely. Thanks to native App Intents integration, you can hold the Action Button even with the screen completely off or locked. The recording starts instantly in the background with a Lock Screen Live Activity and haptic feedback—no Face ID or unlocking required.",
     "faq.q4": "How does syncing to Apple Reminders work?",
     "faq.a4": "On-device AI automatically identifies action items and commitments in your audio and lets you sync them to Apple Reminders with a single tap.",
+    "faq.q5": "Can I record using my AirPods or Bluetooth headphones?",
+    "faq.a5": "Yes. KnowledgeWave automatically detects any connected Bluetooth headset (AirPods, AirPods Pro/Max, over-ear headphones, or third-party earbuds) and prioritizes their microphone so your voice is captured crisply while walking or with your phone tucked away.",
 
     // Privacy Banner
     "privacy.banner.title": "Your data never leaves your iPhone",

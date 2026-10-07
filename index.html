@@ -59,7 +59,9 @@
           "100% On-Device Whisper Speech-to-Text",
           "Local AI Executive Summaries & Insights",
           "Document Hub PDF & Word Reader",
-          "Apple Action Button Quick Recording",
+          "Action Button Instant Recording with Lock Screen Support",
+          "Automatic AirPods & Bluetooth Headset Microphone Capture",
+          "Interactive iOS Lock Screen & Control Center Widgets",
           "Apple Reminders Auto Sync",
           "Interactive Ask-your-note AI Chat"
         ]
@@ -85,10 +87,18 @@
           },
           {
             "@type": "Question",
-            "name": "¿Cómo se integra con el Botón de Acción de mi iPhone?",
+            "name": "¿Puedo grabar con el Botón de Acción con el iPhone bloqueado?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Puedes asignar el atajo de KnowledgeWave al Botón de Acción en Ajustes de iOS para iniciar la grabación instantáneamente incluso con la pantalla bloqueada."
+              "text": "Sí. Gracias a la integración nativa con App Intents, puedes mantener presionado el Botón de Acción con la pantalla apagada o bloqueada; la grabación iniciará de inmediato en segundo plano con una Live Activity en tu Lock Screen y vibración háptica, sin necesidad de desbloquear el teléfono."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Puedo grabar usando mis AirPods o auriculares Bluetooth?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sí. KnowledgeWave detecta automáticamente cualquier auricular Bluetooth conectado y prioriza su micrófono para capturar tu voz con claridad mientras caminas o tienes el iPhone en el bolsillo."
             }
           }
         ]
@@ -171,9 +181,9 @@
         <!-- Action Button (Featured) -->
         <div id="action-button" class="feature-card featured-card">
           <div class="featured-content">
-            <span class="featured-badge" data-i18n="card.action.badge">ACCESO INSTANTÁNEO DE HARDWARE</span>
-            <h3 style="font-size: 1.6rem; margin-bottom: 0.75rem;" data-i18n="card.action.title">Integración Total con el Botón de Acción</h3>
-            <p data-i18n="card.action.desc">Asigna KnowledgeWave al botón lateral de tu iPhone en Ajustes de iOS. Mantén presionado un par de segundos y la app comenzará a grabar de inmediato con Dynamic Island activa, incluso si el dispositivo está bloqueado o en el bolsillo.</p>
+            <span class="featured-badge" data-i18n="card.action.badge">ACCESO INSTANTÁNEO DE HARDWARE · PANTALLA BLOQUEADA</span>
+            <h3 style="font-size: 1.6rem; margin-bottom: 0.75rem;" data-i18n="card.action.title">Botón de Acción: Graba al Instante con Pantalla Bloqueada</h3>
+            <p data-i18n="card.action.desc">Configura KnowledgeWave en el Botón de Acción de tu iPhone. Mantén presionado con la pantalla apagada o bloqueada y comenzará a grabar al instante en segundo plano con Live Activity y confirmación háptica, sin necesidad de desbloquear el dispositivo.</p>
           </div>
           <div style="font-size: 3.5rem; color: var(--color-primary); padding: 1.5rem; background: rgba(0,0,0,0.4); border-radius: 20px; border: 1px solid var(--color-border);">
             🔘
@@ -187,35 +197,49 @@
           <p data-i18n="card.whisper.desc">Convierte horas de audio en texto con altísima fidelidad y soporte multilingüe sin necesitar conexión a internet.</p>
         </div>
 
-        <!-- 2: Llama LLM -->
+        <!-- 2: Bluetooth & AirPods -->
+        <div class="feature-card">
+          <div class="feature-icon">🎧</div>
+          <h3 data-i18n="card.bluetooth.title">Micrófono de AirPods & Bluetooth Automático</h3>
+          <p data-i18n="card.bluetooth.desc">Deja tu iPhone en el bolsillo o la mochila. KnowledgeWave detecta tus AirPods o cualquier auricular Bluetooth conectado y captura tu audio automáticamente desde su micrófono.</p>
+        </div>
+
+        <!-- 3: Controls & Widgets -->
+        <div class="feature-card">
+          <div class="feature-icon">🎛️</div>
+          <h3 data-i18n="card.controls.title">Widgets Interactivos & Centro de Control</h3>
+          <p data-i18n="card.controls.desc">Inicia grabaciones con un solo toque desde la pantalla de bloqueo de iOS 18 / 26, widgets interactivos en tu pantalla de inicio o el nuevo Centro de Control configurable.</p>
+        </div>
+
+        <!-- 4: Llama LLM -->
         <div class="feature-card">
           <div class="feature-icon">🧠</div>
           <h3 data-i18n="card.llama.title">Resúmenes e Insights con Inteligencia Artificial</h3>
           <p data-i18n="card.llama.desc">Genera resúmenes ejecutivos, extrae puntos clave estructurados y obtén respuestas rápidas procesadas 100% en la memoria de tu dispositivo.</p>
         </div>
 
-        <!-- 3: Document Hub -->
+        <!-- 5: Document Hub -->
         <div class="feature-card">
           <div class="feature-icon">📚</div>
           <h3 data-i18n="card.dochub.title">Document Hub & Lector Inteligente</h3>
           <p data-i18n="card.dochub.desc">Importa documentos PDF o Word. Extrae su contenido, genera resúmenes automáticos y disfruta de una lectura fluida estilo e-reader.</p>
         </div>
 
-        <!-- 4: TTS -->
+        <!-- 6: TTS -->
         <div class="feature-card">
           <div class="feature-icon">🗣️</div>
           <h3 data-i18n="card.tts.title">Escucha tus Notas con Voz Natural</h3>
           <p data-i18n="card.tts.desc">Text-to-Speech nativo con modulación de velocidad de hasta 3.0x y detección automática de idioma para estudiar o repasar en movimiento.</p>
         </div>
 
-        <!-- 5: Reminders -->
+        <!-- 7: Reminders -->
         <div class="feature-card">
           <div class="feature-icon">✅</div>
           <h3 data-i18n="card.reminders.title">Exportación a Recordatorios de Apple</h3>
           <p data-i18n="card.reminders.desc">La IA detecta compromisos y tareas pendientes en tus reuniones y te permite enviarlos a Apple Reminders con un solo toque.</p>
         </div>
 
-        <!-- 6: Chat -->
+        <!-- 8: Chat -->
         <div class="feature-card">
           <div class="feature-icon">💬</div>
           <h3 data-i18n="card.chat.title">Conversa con tus Notas</h3>
@@ -366,10 +390,10 @@
         <div class="faq-item">
           <div class="faq-question">
             <span class="icon">🔘</span>
-            <span data-i18n="faq.q3">¿Puedo usar el Botón de Acción de mi iPhone?</span>
+            <span data-i18n="faq.q3">¿Puedo grabar con el Botón de Acción con el iPhone bloqueado?</span>
           </div>
           <div class="faq-answer" data-i18n="faq.a3">
-            Sí. Puedes asignar KnowledgeWave al Botón de Acción en Ajustes de iOS para comenzar a grabar de inmediato, incluso con la pantalla bloqueada o el teléfono en el bolsillo.
+            Sí, totalmente. Gracias a la integración nativa con App Intents, puedes mantener presionado el Botón de Acción con la pantalla apagada o bloqueada; la grabación iniciará de inmediato en segundo plano con una Live Activity en tu Lock Screen y vibración háptica, sin necesidad de desbloquear el teléfono.
           </div>
         </div>
 
@@ -380,6 +404,16 @@
           </div>
           <div class="faq-answer" data-i18n="faq.a4">
             La inteligencia artificial detecta compromisos y tareas pendientes en tus conversaciones y te permite enviarlos a Apple Reminders con un solo toque.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span class="icon">🎧</span>
+            <span data-i18n="faq.q5">¿Puedo grabar usando mis AirPods o auriculares Bluetooth?</span>
+          </div>
+          <div class="faq-answer" data-i18n="faq.a5">
+            Sí. KnowledgeWave detecta automáticamente cualquier auricular Bluetooth conectado (AirPods de cualquier generación, diademas o auriculares genéricos) y prioriza su micrófono para capturar tu voz con claridad mientras caminas o tienes el iPhone en el bolsillo.
           </div>
         </div>
       </div>
