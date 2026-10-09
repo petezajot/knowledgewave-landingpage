@@ -31,7 +31,7 @@ const translations = {
     // Action Button Card
     "card.action.badge": "ACCESO INSTANTÁNEO · HARDWARE DE APPLE",
     "card.action.title": "Grabación con Pantalla Bloqueada y Botón de Acción",
-    "card.action.desc": "Inicia y detén grabaciones al instante con el botón lateral de tu iPhone sin necesidad de desbloquear con Face ID ni abrir la app. Se activa en segundo plano con Live Activity en vivo en la pantalla de bloqueo y Dynamic Island, y te confirma con vibración háptica física al tacto.",
+    "card.action.desc": "Asigna KnowledgeWave desde la configuración de tu iPhone (Ajustes > Botón de Acción). Una vez configurado, inicia y detén grabaciones al instante manteniendo presionado el botón lateral, sin necesidad de desbloquear con Face ID ni abrir la app. Se activa con Live Activity en vivo y vibración háptica.",
 
     // Card Bluetooth & AirPods
     "card.bluetooth.title": "Micrófono Bluetooth & AirPods Automático",
@@ -142,7 +142,7 @@ const translations = {
     // Action Button Card
     "card.action.badge": "INSTANT HARDWARE ACCESS · LOCK SCREEN READY",
     "card.action.title": "Action Button: Instant Record even when Locked",
-    "card.action.desc": "Set KnowledgeWave to your iPhone's Action Button. Hold it down with your screen turned off or locked to instantly capture thoughts. Runs seamlessly in the background with Live Activities and tactile haptics—zero unlocking required.",
+    "card.action.desc": "Assign KnowledgeWave in your iPhone Settings (Settings > Action Button). Once configured, hold the side button with your screen turned off or locked to instantly capture thoughts. Runs seamlessly in the background with Live Activities and tactile haptics.",
 
     // Card: Bluetooth & AirPods
     "card.bluetooth.title": "AirPods & Bluetooth Mic Support",
